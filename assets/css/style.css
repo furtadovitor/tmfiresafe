@@ -1,0 +1,298 @@
+/* === BASE === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #1c1c1c;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #f44336 !important;
+}
+
+..navbar-nav .nav-link {
+  color: #333; /* cor padrão */
+  transition: color 0.3s ease;
+}
+/* Navbar link hover com vermelho btn-danger */
+.navbar-nav .nav-link:hover {
+  color: #dc3545; /* cor do btn-danger */
+}
+
+
+/* Opcional: foco acessível */
+.navbar-nav .nav-link:focus {
+  color: #dc3545;
+  outline: none;
+}
+
+
+/* Manter cor no item ativo (se quiser) */
+.navbar-nav .nav-link.active {
+  color: #dc3545;
+}
+
+/* O
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* Ícone personalizado do menu hamburguer */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* === HEADER === */
+header {
+  background: url('../img/fundo.jpg') center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Sombra escura sobre a imagem de fundo */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+header .content {
+  z-index: 2;
+}
+
+/* === SEÇÕES === */
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f44336;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header#home {
+  
+  /* Define a imagem de fundo, centralizada, cobrindo toda a área */
+  background-image: url('../img/home.png'); /* seu caminho da imagem */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  height: 100vh; /* altura total da viewport */
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Para melhorar a leitura, adiciona uma camada escura por cima da imagem */
+header#home::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left = 0 */
+  background: rgba(0, 0, 0, 0.6); /* sombra preta semitransparente */
+  z-index: 0;
+}
+
+/* Conteúdo dentro do header fica acima da camada escura */
+header#home .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajuste dos textos */
+header#home h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+header#home p.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+#clientes img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.sobre-section {
+  background: linear-gradient(135deg, #2c2c2c 0%, #111111 100%);
+  /* cinza escuro (#2c2c2c) para vermelho fogo (#b22222) */
+  color: white;
+  padding: 60px 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.sobre-section .section-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.sobre-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.sobre-section .row {
+  align-items: center; /* já tá, só reforçando */
+}
+
+.sobre-section img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.sobre-section .col-md-6.text-white {
+  padding-left: 30px; /* espaço à esquerda do texto */
+  padding-right: 15px;
+}
+
+.destaque {
+  color: white;
+  font-weight: 900;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  -webkit-text-stroke: 1.5px #b22222; /* contorno vermelho */
+  text-shadow:
+    2px 2px 5px rgba(178, 34, 34, 0.7),
+    0 0 10px #b22222;
+}
+
+/* Fade In */
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide Up */
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zoom In */
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1s ease forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+  .btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1ebe57;
+  }
+
+  #clientes {
+  margin-bottom: 60px; /* Espaço abaixo da seção clientes */
+}
+
+#sobre {
+  margin-top: 60px; /* Espaço acima da seção sobre */
+}
+
+#servicos {
+  margin-bottom: 60px; /* Espaço acima da seção sobre */
+}
+
+ #contato {
+    background-color: #f8f9fa; /* cor clara para a seção */
+  }
+  #contato .form-control {
+    border-radius: 8px;
+  }
+  #contato .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+  }
+  #contato .btn-primary:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TM FIRESAFE - Soluções que previnem, sistemas que salvam.</title>
+  <link rel="icon" href="assets/img/logo2.svg" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome para ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/img/logo2.svg" alt="Logo TM FIRESAFE" width="40" height="40"
+          class="d-inline-block align-text-top">
+        TM FIRESAFE
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="content">
+      <h1 class="display-4">Segurança Contra Incêndio</h1>
+      <p class="lead zoom-in" style="animation-delay: 0.3s;">Soluções que previnem, sistemas que salvam.</p>
+      <button class="btn btn-danger btn-lg mt-4 zoom-in" style="animation-delay: 0.6s;"
+        onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">
+        Solicite um Orçamento
+      </button>
+
+    </div>
+  </header>
+
+
+
+  <section id="servicos" class="sobre-section bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Nossos Serviços</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+          <img src="assets/img/img_sobre.jpeg" alt="Projetos Técnicos" class="img-fluid rounded mb-3"
+            style="max-height: 300px; object-fit: cover;">
+          <h5>Projetos Técnicos</h5>
+          <p>Projeto de sistemas de incêndio com a utilização de Sprinklers, hidrantes, alarmes, extintores e
+            sinalização.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+          <img src="assets/img/img_sobre.jpeg" alt="Laudos e Vistorias" class="img-fluid rounded mb-3"
+            style="max-height: 300px; object-fit: cover;">
+          <h5>Laudos e Vistorias</h5>
+          <p>Laudos técnicos e ARTs com regularização junto aos órgãos competentes (Corpo de Bombeiros, prefeitura,
+            etc.).</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img src="assets/img/img_sobre.jpeg" alt="Certificados" class="img-fluid rounded mb-3"
+            style="max-height: 300px; object-fit: cover;">
+          <h5>Manutenções</h5>
+          <p>Manutenção preventiva e corretiva dos projetos com garantia de funcionamento e conformidade com as normas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SEÇÃO DE CLIENTES -->
+  <section id="clientes" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Clientes Atendidos</h2>
+      <p class="text-center mb-4">Pode botar o que quiser aqui, teste testes testes e testes.</p>
+
+      <div id="clientesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+          <!-- Primeiro grupo de 6 logos -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 1" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 2" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 3" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 4" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 5" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 6" style="max-width: 120px;">
+            </div>
+          </div>
+
+          <!-- Segundo grupo de 6 logos -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 7" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 8" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 9" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 10" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 11" style="max-width: 120px;">
+              <img src="assets/img/cliente1.webp" class="img-fluid" alt="Logo 12" style="max-width: 120px;">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clientesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clientesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <section id="sobre" class="sobre-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Imagem do lado esquerdo -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/img/img_sobre.jpeg" alt="Imagem TM FIRESAFE" class="img-fluid rounded shadow">
+        </div>
+        <!-- Texto do lado direito -->
+        <div class="col-md-6 text-white">
+          <h2 class="section-title mb-4">Conheça a TM FIRESAFE</h2>
+          <p>
+            <span class="destaque">TM FIRESAFE</span> nasceu com um propósito claro: proteger vidas através do projeto
+            de prevenção contra incêndio
+            e pânico. Atuamos com excelência na assistência, projeção e regularização para sistemas de combate a
+            incêndio, sempre alinhados às normas técnicas e exigências legais.
+          </p>
+
+          <p>
+            Nosso compromisso é ir além da entrega de projetos. Oferecemos consultoria personalizada, agilidade no
+            atendimento e soluções seguras para residências, comércios, indústrias, escolas, condomínios e qualquer tipo
+            de estabelecimento em geral.
+          </p>
+          <p>
+            Com uma equipe técnica especializada e foco em inovação, a TM FIRESAFE se posiciona como uma parceira
+            estratégica na construção de ambientes mais seguros e preparados para o imprevisto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONTATO -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <!-- Logo centralizada -->
+        <img src="assets/img/logo2.svg" alt="Logo" style="max-width: 150px;">
+
+        <!-- Título -->
+        <h2 class="mt-3">Entre em contato</h2>
+
+        <!-- Subtítulo -->
+        <p class="text-muted">Estamos pronto para entender sua necessidade e oferecer a melhor solução em segurança
+          contra incêndios.
+        </p>
+      </div>
+      <form style="max-width: 500px; margin: 0 auto;">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999">
+        </div>
+
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."
+            required></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger px-4">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TM FIRESAFE - Todos os direitos reservados</p>
+    </div>
+    <a href="https://wa.me/5591999999999" target="_blank" class="btn-whatsapp" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </footer>
+
+
+  <!-- Bootstrap JS + script personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
