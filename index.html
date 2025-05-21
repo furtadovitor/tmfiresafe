@@ -165,42 +165,44 @@
   <!-- SEÇÃO DE CONTATO -->
   <section id="contato" class="py-5 bg-light">
     <div class="container">
-      <div class="text-center mb-4">
+      <div class="text-center mb-5">
         <!-- Logo centralizada -->
         <img src="assets/img/logo2.svg" alt="Logo" style="max-width: 150px;">
 
         <!-- Título -->
-        <h2 class="mt-3">Entre em contato</h2>
+        <h2 class="mt-4 fw-bold" style="font-size: 2rem;">Entre em contato</h2>
 
         <!-- Subtítulo -->
-        <p class="text-muted">Estamos pronto para entender sua necessidade e oferecer a melhor solução em segurança
-          contra incêndios.
+        <p class="text-muted" style="font-size: 1.1rem;">
+          Estamos prontos para entender sua necessidade e oferecer a melhor solução em segurança contra incêndios.
         </p>
       </div>
-      <form style="max-width: 500px; margin: 0 auto;">
+
+      <!-- Formulário de contato -->
+      <form action="enviar.php" method="post" style="max-width: 600px; margin: 0 auto;">
         <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+          <label for="nome" class="form-label fw-semibold">Nome</label>
+          <input type="text" name="nome" class="form-control" id="nome" placeholder="Seu nome" required>
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+          <label for="email" class="form-label fw-semibold">E-mail</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="seu@email.com" required>
         </div>
 
         <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999">
+          <label for="telefone" class="form-label fw-semibold">Telefone</label>
+          <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="(99) 99999-9999">
         </div>
 
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."
-            required></textarea>
+        <div class="mb-4">
+          <label for="mensagem" class="form-label fw-semibold">Mensagem</label>
+          <textarea name="mensagem" class="form-control" id="mensagem" rows="4"
+            placeholder="Escreva sua mensagem aqui..." required></textarea>
         </div>
 
         <div class="text-center">
-          <button type="submit" class="btn btn-danger px-4">Enviar</button>
+          <button type="submit" class="btn btn-danger px-5">Enviar</button>
         </div>
       </form>
     </div>
@@ -213,7 +215,7 @@
     <div class="container">
       <p>&copy; 2025 TM FIRESAFE - Todos os direitos reservados</p>
     </div>
-    <a href="https://wa.me/5591999999999" target="_blank" class="btn-whatsapp" aria-label="WhatsApp">
+    <a href="https://wa.me/5521969258866" target="_blank" class="btn-whatsapp" aria-label="WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
   </footer>
