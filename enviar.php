@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -37,10 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isHTML(true);
         $mail->Subject = 'Mensagem de contato - TM FIRESFE';
         $mail->Body = $corpo_email;
-        
+
         $mail->send();
-        echo "<script>alert('Mensagem enviada com sucesso!'); window.location.href='index.html#contato';</script>";
+        header("Location: index.html?status=sucesso#contato");
+        exit;
     } catch (Exception $e) {
-        echo "<script>alert('Erro ao enviar mensagem.'); history.back();</script>";
+        header("Location: index.html?status=erro#contato");
+        exit;
     }
 }
